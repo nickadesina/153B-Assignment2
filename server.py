@@ -51,8 +51,8 @@ def chat():
                     timeout=5
                 )
                 return jsonify(resp.json())
-            except Exception as e:
-                return jsonify({"chat": f"Error contacting server for /{command}: {e}"})
+            except:
+                return jsonify({"chat": f"Error contacting server for /{command}"})
         else:
             return jsonify({"chat": f"The command {command} is not registered."})
     return jsonify({"chat": chat_text})
