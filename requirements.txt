@@ -2,3 +2,4 @@ requests
 # Just some extra pkgs that I need for this proj
 psycopg2
 flask
+flask_sqlalchemy
